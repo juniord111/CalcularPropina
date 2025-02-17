@@ -30,7 +30,7 @@ body {
     border-radius: 5px;
 }
 
-/* Estilo para los contenedores de los inputs con íconos */
+
 .input-container {
     position: relative;
     display: flex;
@@ -42,7 +42,7 @@ body {
 
 .input-container img {
     position: absolute;
-    left: 10px; /* Posiciona el ícono a la izquierda */
+    left: 10px; 
     width: 15px;
     height: auto;
 }
@@ -51,8 +51,8 @@ body {
     width: 100%;
     text-align: end;
     padding: 10px;
-    padding-right: 15px; /* Espacio a la derecha */
-    padding-left: 30px; /* Espacio para el ícono */
+    padding-right: 15px; 
+    padding-left: 30px; 
     background: none;
     border: none;
     font-weight: bold;
