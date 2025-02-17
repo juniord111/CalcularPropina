@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: hsl(186, 14%, 43%);
+}
+
+.icon{
+    margin-bottom: 12px;
+}
+
+#container {
+    background-color: white;
+    width: 533px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para los contenedores de los inputs con íconos */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-container img {
+    position: absolute;
+    left: 10px; /* Posiciona el ícono a la izquierda */
+    width: 15px;
+    height: auto;
+}
+
+.input-container input {
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+    padding-right: 15px; /* Espacio a la derecha */
+    padding-left: 30px; /* Espacio para el ícono */
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 0.5em;
+    margin-bottom: 5px;
+}
+
+.porcentajes {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.porcentajes:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.select {
+    font-size: 0.5em;
+    margin-bottom: 10px;
+}
+
+.select-tip {
+    margin-bottom: 10px;
+}
+
+#customTip {
+    width: 60px;
+    height: 28px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    cursor: pointer;
+    text-align: end;
+}
+
+#customTip:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+
+#customTip::placeholder {
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.operate {
+    padding: 10px;
+    width: 50%;
+}
+
+.results {
+    width: 47%;
+    height: 220px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.amount {
+    color: hsl(172, 67%, 45%);
+}
+
+.span-person {
+    color: hsl(184, 14%, 56%);
+    font-size: 0.9em;
+}
+
+.totales {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.person {
+    font-size: 0.5em;
+}
+
+.amount {
+    font-size: 1.5em;
+}
+
+#reset {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: hsl(186, 14%, 43%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(184, 14%, 56%);
+    transition: 300ms all;
+    text-transform: uppercase;
+    margin-top: 65px;
+}
+
+#reset:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+@media (max-width: 400px) {
+    #container {
+        flex-direction: column;
+        height: auto;
+        width: 98%;
+        margin-bottom: 10px;
+    }
+    .icon{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .operate {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .operate input {
+        width: 100%;
+    }
+    label{
+        font-size: 1em;
+    }
+    .select-tip,
+    #customTip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .select {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .porcentajes,
+    #customTip {
+        flex: 0 1 calc(50% - 10px);
+        padding: 10px;
+    }
+
+    #customTip {
+        padding: 15px;
+    }
+
+    .results {
+        width: 90%;
+        background-color: hsl(183, 100%, 15%);
+        margin-bottom: 20px;
+    }
+    .person{
+        font-size: 0.6em;
+    }
+    .span-person {
+        font-size: 1em;
+    }
+}

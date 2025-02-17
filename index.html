@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Propina</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <img class="icon" src="images/logo.svg" alt="">
+    <div id="container">       
+        <div class="operate">
+            <label for="bill">Bill</label>
+            <div class="input-container">
+                <img src="images/icon-dollar.svg" alt="Dollar Icon">
+                <input id="userBill" type="text" placeholder="0">
+            </div>
+           <p class="select">select type</p>
+            <div class="select-tip">
+            <button class="porcentajes" data-porcentaje="5">5%</button>
+            <button class="porcentajes" data-porcentaje="10">10%</button>
+            <button class="porcentajes" data-porcentaje="15">15%</button>
+            <button class="porcentajes" data-porcentaje="25">25%</button>
+            <button class="porcentajes" data-porcentaje="50">50%</button>
+            <input type="text" id="customTip" placeholder="custom" min="0">
+            </div>
+            <label id="numberPeople" for="numberPeople">Number of People</label>
+            <div class="input-container">
+                <img src="images/icon-person.svg" alt="Person Icon">
+                <input id="people" type="text" placeholder="0">
+            </div>
+        </div>
+         <div class="results">
+           <div class="totales">
+            <p class="person">tip Amount <br><span class="span-person">/ person</span></p>
+           
+            <p class="amount">$<span  id="propina">0.00</span></p>
+        </div>
+           <div class="totales">
+            <p class="person">tip Amount <br><span class="span-person">/ person</span></p>
+            
+            <p class="amount">$<span  id="total">0.00</span></p>
+           
+        </div> <button id="reset">Reset</button>
+         </div>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
